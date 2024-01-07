@@ -1,0 +1,14 @@
+items = {"milk": 5, "bread": 5, "eggs": 6}
+
+def main(inputs):
+    p1=0
+    p2=0
+    p3=0
+    for i in items:
+        if inputs['item_1'].lower()==i:
+            p1+=items[i]
+        if inputs['item_2'].lower()==i:
+            p2+=items[i] 
+        if inputs['item_3'].lower()==i:
+            p3=items[i]       
+    return {"sum": p1+p2+p3,"item1":inputs['item_1'],"item2":inputs['item_2'],"item3":inputs['item_3']}
